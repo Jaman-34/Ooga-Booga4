@@ -5,3 +5,41 @@
     top: 0;
     left: 0;
 }
+
+body {
+    background-image: url(https://www.shutterstock.com/image-photo/national-flag-day-america-united-600nw-2298660421.jpg)
+}
+
+p {
+    color: beige;
+}
+
+h1 {
+    color: cornsilk;
+}
+
+/*Here I am selecting the class container and will be adding grid to it*/
+.container{
+    display: grid;
+    grid-template-areas:
+    'intro intro'
+    'cities attractions'
+    'images images'
+}
+
+.intro {
+    grid-area: cat;
+}
+
+.cities {
+    grid-area: cities;
+}
+.images {
+    grid-area: images;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.attractions {
+    grid-area: attractions;
+}
